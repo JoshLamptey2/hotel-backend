@@ -1,0 +1,9 @@
+.vscode
+.env
+env/
+static/
+media/
+migrations/
+__pycache__/
+.qodo
+.venv

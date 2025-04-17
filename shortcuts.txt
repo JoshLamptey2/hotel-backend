@@ -1,0 +1,60 @@
+{
+    // Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+    // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+    // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+    // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+    // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+    // Placeholders with the same ids are connected.
+    // Example:
+    // "Print to console": {
+    //  "scope": "javascript,typescript",
+    //  "prefix": "log",
+    //  "body": [
+    //      "console.log('$1');",
+    //      "$2"
+    //  ],
+    //  "description": "Log output to console"
+    // }
+ 
+    "Org Slug": {
+        "prefix": "org_slug",
+        "body": "request.user.org_slug",
+        "description": "Expands to request.user.org_slug"
+    },
+    "Rest Framework 400 Bad Request": {
+        "prefix": "rf400",
+        "body": "return Response({'success': False, 'message': '${1:error_message}'}, status=status.HTTP_400_BAD_REQUEST)",
+        "description": "Returns a REST framework 400 response for bad requests"
+    },
+    "Rest Framework 200 OK": {
+        "prefix": "rf200",
+        "body": "return Response({'success': True, 'message': ${1:'message'}}, status=status.HTTP_200_OK)",
+        "description": "Returns a REST framework 200 response for successful requests"
+    },
+    "Rest Framework 201 Created": {
+        "prefix": "rf201",
+        "body": "return Response({'success': True, 'message': ${1:serializer}.data}, status=status.HTTP_201_CREATED)",
+        "description": "Returns a REST framework 201 response for successful creation"
+    },
+    "Rest Framework 500 Internal Server Error": {
+        "prefix": "rf500",
+        "body": "return Response({'success': False, 'message': '${1:An error occured whilst processing your request}'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)",
+        "description": "Returns a REST framework 500 response for server errors"
+    },
+    "Serializer method field":{
+        "prefix":"methodf",
+        "body": "serializers.SerializerMethodField()",
+        "description": "Rest Framework's SerializerMethod Field"
+    },
+    "return success true": {
+        "prefix": "rst",
+        "body": "return {'success': True, 'message': '${1:error_message}'}",
+        "description": "Returns a success true for the API"
+    },
+    "return success false": {
+        "prefix": "rsf",
+        "body": "return {'success': False, 'message': '${1:error_message}'}",
+        "description": "Returns a success false for the API"
+    },
+}
+ 
